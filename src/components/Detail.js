@@ -75,7 +75,6 @@ const Backdrop = styled.View`
   width: 95%;
   top: -30;
   z-index: -2;
-  /* position: absolute;  */
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;

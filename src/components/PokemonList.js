@@ -65,7 +65,7 @@ const TypeLabel = styled.Text`
   justify-content: center;
 `
 
-class Products extends Component
+class Pokemon extends Component
 {
 
   goToDetail(id) 
@@ -108,7 +108,7 @@ class Products extends Component
   }
 }
 
-const productsQuery = gql`
+const PokemonsQuery = gql`
   {
     pokemons(first: 10) {
       id
@@ -120,5 +120,5 @@ const productsQuery = gql`
   }
 `
 
-export default graphql(productsQuery)(Products)
+export default graphql(PokemonsQuery)(Pokemon)
 

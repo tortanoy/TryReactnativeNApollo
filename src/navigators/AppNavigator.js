@@ -4,7 +4,7 @@ import {
   TabNavigator 
 } from 'react-navigation'
 import Login from '../components/Login'
-import ProductsList from '../components/Products'
+import PokemonList from '../components/PokemonList'
 import DetailScreen from '../components/Detail'
 
 const LoginScreen = StackNavigator(
@@ -18,10 +18,10 @@ const LoginScreen = StackNavigator(
   }
 )
 
-const ProductsScreen = StackNavigator(
+const PokemonScreen = StackNavigator(
   {
-    Products: {
-      screen: ProductsList,
+    Pokemon: {
+      screen: PokemonList,
     },
     Detail: {
       screen: DetailScreen
@@ -39,15 +39,15 @@ const RootStackNavigator = props => {
     //   }
     // }, 
     {
-      Products: {
-        path: '/products',
-        screen: ProductsScreen
+      Pokemon: {
+        path: '/pokemon',
+        screen: PokemonScreen
       }
     },
     {
       headerMode: 'none',
       initialRouteName: props.loggedin 
-      ? 'Products' 
+      ? 'Pokemon' 
       : 'Login'
     }
   )
